@@ -1,35 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:layout_width="match_parent"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/TextBox1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:textSize="35sp"
+        android:text="Simulador de lançamento de Dado"
+        android:textSize="18sp"
+        android:textColor="@color/red"
+        android:textAlignment="center"
+ />
 
-        app:layout_constraintBottom_toTopOf="@id/textBox2"
 
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+      <!-- texto a representar o valor do DADO -->
     <TextView
-        android:id="@+id/textBox2"
+        android:id="@+id/textViewValorDado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="novo texto"
+        android:text="hgttt"
+        android:layout_gravity="center_horizontal"
         android:textSize="40sp"
-        app:layout_constraintTop_toBottomOf="@id/TextBox1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold"
         />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- contentor da imagem do dado -->
+    <ImageView
+        android:id="@+id/imageViewDado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+/>
+
+    <!-- botão para forçar a rotação do dado -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/textoBT"
+        android:textSize="18sp"
+        />
+
+</LinearLayout>
