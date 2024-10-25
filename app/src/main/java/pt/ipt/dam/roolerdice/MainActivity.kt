@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -26,6 +27,11 @@ class MainActivity : AppCompatActivity() {
         // fazer referência ao Botão da app
         var bt: Button = findViewById(R.id.btRollDice)
         bt.setOnClickListener {
+            // gerar uma msg de aviso
+            Toast.makeText(this,"Foi pressionado o botão",Toast.LENGTH_LONG).show()
+            // testar com o objeto: snackbar
+
+            // gerar um valor aleatório para mostrar o dado correspondente
             rodaDados()
         }
     }
