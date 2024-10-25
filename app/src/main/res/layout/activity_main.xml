@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="wrap_content"
     android:layout_height="match_parent"
@@ -11,10 +10,8 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/estilo_alinhamento"
         android:text="Simulador de lançamento de Dado"
-        android:textAlignment="center"
         android:textColor="@color/red"
         android:textSize="18sp" />
 
@@ -22,9 +19,7 @@
     <!-- texto a representar o valor do DADO -->
     <TextView
         android:id="@+id/textViewValorDado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        style="@style/estilo_alinhamento"
         android:text=""
         android:textSize="40sp"
         android:textStyle="bold" />
@@ -32,18 +27,13 @@
     <!-- contentor da imagem do dado -->
     <ImageView
         android:id="@+id/imageViewDado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        app:srcCompat="@drawable/empty_dice"
-        />
+        style="@style/estilo_alinhamento"
+        app:srcCompat="@drawable/empty_dice" />
 
     <!-- botão para forçar a rotação do dado -->
     <Button
         android:id="@+id/btRollDice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        style="@style/estilo_alinhamento"
         android:text="@string/textoBT"
         android:textSize="18sp" />
 
